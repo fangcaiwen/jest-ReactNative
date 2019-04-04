@@ -7,33 +7,60 @@
  */
 import React, { Component } from 'react';
 import {
-    Platform,
     StyleSheet,
     Text,
     View
 } from 'react-native';
+import BigButton from './BigButton/index';
+import InputText from './InputText/index';
 
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-    android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+export default class Root extends Component {
+    constructor(){
+        super();
+        this.state = {
+            name:'',
+            psw:'',
+            isLogin:false
+        }
+    }
 
-type Props = {};
-export default class Root extends Component<Props> {
+    // 登录方法
+    loginEvent = () => {
+        const { name,psw } = this.state;
+        if(name.length>0&&psw.length>0){
+            this.setState({
+                isLogin:true
+            });
+        }else{
+            this.setState({
+                isLogin:false
+            });
+        }
+    };
+
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            name:nextProps.valueProps
+        });
+    }
+
+
     render() {
+        const {name,psw} = this.state;
+
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to React Native Root!
+                    姓名：
                 </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit App.js
+                <InputText value={name} callBack={(value) => this.setState({name:value})}/>
+
+                <Text style={styles.welcome}>
+                    密码：
                 </Text>
-                <Text style={styles.instructions}>
-                    {instructions}
-                </Text>
+                <InputText value={psw} callBack={(value) => this.setState({psw:value})}/>
+
+                <BigButton title={'提交'} callBack={() => this.loginEvent()}/>
             </View>
         );
     }
@@ -44,11 +71,11 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#F5FCF8',
     },
     welcome: {
         fontSize: 20,
-        textAlign: 'center',
+        textAlign: 'left',
         margin: 10,
     },
     instructions: {

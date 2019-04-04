@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Root component root  renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5FCF8",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 20,
+        "margin": 10,
+        "textAlign": "left",
+      }
+    }
+  >
+    姓名：
+  </Text>
+  <View
+    style={
+      Object {
+        "borderColor": "#888",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "height": 50,
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "width": 300,
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="请输入您所需要的字符"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 16,
+          "paddingLeft": 10,
+        }
+      }
+      value=""
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 20,
+        "margin": 10,
+        "textAlign": "left",
+      }
+    }
+  >
+    密码：
+  </Text>
+  <View
+    style={
+      Object {
+        "borderColor": "#888",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "height": 50,
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "width": 300,
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="请输入您所需要的字符"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 16,
+          "paddingLeft": 10,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "height": 50,
+        "opacity": 1,
+        "width": 300,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#00b7e3",
+          "borderRadius": 4,
+          "height": 50,
+          "justifyContent": "center",
+          "width": 300,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#fff",
+            "fontSize": 18,
+          }
+        }
+      >
+        提交
+      </Text>
+    </View>
+  </View>
+</View>
+`;

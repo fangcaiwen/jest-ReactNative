@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TextInput component renders TextInput as expected 1`] = `
+<View
+  style={
+    Object {
+      "borderColor": "#888",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 10,
+      "width": 300,
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="请输入您所需要的字符"
+    style={
+      Object {
+        "flex": 1,
+        "fontSize": 16,
+        "paddingLeft": 10,
+      }
+    }
+  />
+</View>
+`;
