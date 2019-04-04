@@ -1,6 +1,6 @@
-*** jest 测试***
+***jest 测试***
 
-// 安装enzyme
+>  安装enzyme
 
 ```
 npm install enzyme --save-dev
@@ -12,45 +12,47 @@ npm install react-dom  --save-dev
 ```
 
 
-// jest 测试(三个命令任选其一)
+> jest 测试(三个命令任选其一)
 
+```
 jest
 
 npm test
 
 npm run test
+```
 
-// 覆盖快照
+> 覆盖快照
 
 ```
 jest -u
 ```
 
-// 配置
+> 配置
 
 ```
 sudo npm install -g jest-cli
 ```
 
-// 生成测试覆盖率报告
+> 生成测试覆盖率报告
 
 ```
 jest --coverage
 ```
 
 
-// api
+> api
 
-// 返回期望的对象
+1. 返回期望的对象
 expect()
 
-// 匹配值相等
+2. 匹配值相等
 toBe()
 
-// 匹配引用类型相等
+3. 匹配引用类型相等
 toEqual()
 
-// 非
+4.非
 
 ```
 .not.toBe();
@@ -62,7 +64,7 @@ toBeTruthy任何匹配if语句为真
 toBeFalsy任何匹配if语句为假
 ```
 
-数字匹配器
+5.数字匹配器
 
 ```
 toBeGreaterThan()：大于
@@ -71,7 +73,7 @@ toBeLessThan()：小于
 toBeLessThanOrEqual()：小于或等于
 ```
 
-字符串
+6.字符串
 使用toMatch()函数测试字符串，传递的参数需要是正则表达式。例如
 
 ```
@@ -85,7 +87,7 @@ test('but there is a "stop" in Christoph', () => {
 ```
 
 
-数组
+7.数组
 如果要检测某个字符串是否包含某个字符串或字符，可以使用toContain()。例如：
 
 ```
@@ -103,11 +105,11 @@ test('字符串包含', () => {
 ```
 
 
-toThrow
+8.toThrow
 如果想在测试特定函数的时候抛出错误，则可以在它调用的时候可以使用toThrow()。
 
 
-// 浮点数比较
+9. 浮点数比较
 toBeCloseTo
 
 ```
@@ -119,7 +121,9 @@ test('两个浮点数字相加', () => {
 ```
 
 
-// root源代码
+> 真实案例，测试root
+
+1.root源代码
 
 ```
 import React, { Component } from 'react';
@@ -204,7 +208,7 @@ const styles = StyleSheet.create({
 ```
 
 
-// 测试root的代码
+2.测试root的代码
 
 ```
 import React from 'react';
@@ -249,7 +253,7 @@ describe('Testing Root component', () => {
 
 ```
 
-##取值props和state，以及设置
+> 取值props和state，以及设置prop和state的值
 
 ```
 
